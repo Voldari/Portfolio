@@ -23,15 +23,19 @@
 
         /* Type defined */
         --normal-font: "Junction";
+        --bold-font: "Junction-bold";
         font-family: var(--normal-font);
 
         /* Font sizes defined */
-        --font-size-normal: 1.953rem;
-        --font-size-big: 2.441rem;
-        --font-size-large: 3.052rem;
-        --font-size-giant: 3.815rem; 
+        --font-size-small: 1.5rem;
+        --font-size-normal: 2rem;
+        --font-size-large: 2.666rem;
+        --font-size-xlarge: 4.737rem;
+        --font-size-xxlarge: 6.315rem;
+        --font-size-xxxlarge: 8.417rem; 
         
         font-size: 62.5%;
+        letter-spacing: .15rem;
     }
 
     :global(*) {
@@ -67,14 +71,14 @@
     }
 
     .title {
-        font-size: var(--font-size-giant);
+        font-size: var(--font-size-xxxlarge);
         font-family: 'Junction-bold';
         margin-bottom: 1rem;
     }
 
     .subtitle {
         color: var(--font-color-highlight);
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-xlarge);
         font-family: 'Junction-bold';
         margin-bottom: 2rem;
     }
@@ -82,7 +86,7 @@
     .paragraph {
         color: var(--font-color-light);
 
-        font-size: var(--font-size-big);
+        font-size: var(--font-size-large);
 
         letter-spacing: .15rem;
         margin-bottom: 2rem;

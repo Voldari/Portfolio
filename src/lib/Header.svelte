@@ -7,7 +7,7 @@
     <div class="header">
         <Navlink link="/">Home</Navlink>
     </div>
-    
+
     <Navlink link="/projects">Projects</Navlink>
     <Navlink link="/articles">Articles</Navlink>
     <Navlink link="/uses">Uses</Navlink>
@@ -16,7 +16,6 @@
 <style>
     .container { 
         display: flex;
-
         gap: 3rem;
     }
     .header {

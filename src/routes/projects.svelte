@@ -1,26 +1,30 @@
+<script>
+import ProjectCard from "$lib/ProjectCard.svelte";
+
+</script>
 <div class="body">
     <h1 class="title">Projects</h1>
     <h2 class="subtitle">here are some of the things that I've been working on</h2>
     <div class="project-grid">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
     </div>
 </div>
 
 <style>
     .body {
-        max-width: 100rem;
+        max-width: 200rem;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        padding: 5rem;
     }
 
     .title {
-        font-size: var(--font-size-giant);
+        font-size: var(--font-size-xlarge);
         font-family: 'Junction-bold';
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .subtitle {
@@ -32,12 +36,12 @@
 
     .project-grid {
         height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 50rem);
-        gap: 1rem;
-    }
-    .project {
-        border: solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        gap: 2rem;
     }
 </style>
