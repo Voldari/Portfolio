@@ -8,7 +8,9 @@
     <div class="desc">
         <slot name="desc">Projects are things that were done by me and that I show on the internet so hopefully people think I'm smart</slot>
     </div>
-    <div class="tech">Svelte * Dr Pepper * Zwop</div>
+    <div class="tech">
+        <slot name="tech">Svelte * Dr Pepper * Zwop</slot>    
+    </div>
 </div>
 
 <style>
@@ -27,11 +29,11 @@
         grid-template-rows: 3rem auto 1fr;
 
         border: solid;
-        border-radius: 2rem;
+        border-radius: var(--gap-m);
 
-        padding: 2rem;
+        padding: var(--gap-m);
 
-        gap: 2rem;
+        gap: var(--gap-m);
     }
 
     .title {

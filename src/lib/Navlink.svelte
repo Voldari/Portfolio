@@ -15,9 +15,7 @@
 
 
 <a href={link} class="button" class:selected>
-    <div class="text">
         <slot>button</slot>
-    </div>
     <div class="box"/>
 </a>
 
@@ -30,9 +28,8 @@
         --box-width: 100%; 
         
         height: 3rem;
-        width: 10rem;
         font-size: 3rem;
-        background-color: hsl(0, 0%, 100%);
+        text-decoration: none;
         color: black;
         border: none;
         position: relative;
@@ -42,10 +39,11 @@
     .button:hover, .button:focus-visible {
         --box-height: 50%;
         --box-width: 110%;
+        --color: var(--hover-color, hsl(245, 91%, 73%));
     }
     .button:active {
         --box-height: 20%;
-        --color: var(--active-color, hsl(245, 91%, 78%));
+        --color: var(--active-color, hsl(245, 91%, 58%));
     }
 
     .selected {
@@ -53,17 +51,8 @@
         --box-width: 110%; 
     }
 
-    .text {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
     .box { 
-        background-color: var(--color, hsl(245, 91%, 68%));
+        background-color: var(--color, hsl(245, 91%, 88%));
 
         position: absolute;
         left: 50%;
@@ -72,7 +61,11 @@
         width: var(--box-width);
         height: var(--box-height);
         
-        transition: height .1s ease, width .3s ease;
+        transition: height .1s linear, width .2s linear, background-color .2s ease;
+
+        z-index: -1;
     }
+
+
 </style>
 

@@ -57,7 +57,7 @@
     p {
         font-size: var(--font-size-normal);
         grid-area: "description";
-        padding-left: 5rem;
+        padding-left: 2rem;
     }
 
     .box{

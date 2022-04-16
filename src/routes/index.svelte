@@ -1,12 +1,13 @@
 <script>
-
+    import data from  "/src/content/home.json";
 </script>
 
 <div class="body">
-    <h1 class="title">Hi, I’m Isaac Harper</h1>
-    <h2 class="subtitle">a web developer in Tucson, AZ</h2>
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h1 class="title">{data.title}</h1>
+    <h2 class="subtitle">{data.subtitle}</h2>
+    <p class="paragraph">
+        {data.intro}
+    </p>
 </div>
 
 
@@ -33,7 +34,9 @@
         --font-size-xlarge: 4.737rem;
         --font-size-xxlarge: 6.315rem;
         --font-size-xxxlarge: 8.417rem; 
-        
+
+        --gap-m: 2rem;
+
         font-size: 62.5%;
         letter-spacing: .15rem;
     }
@@ -73,14 +76,14 @@
     .title {
         font-size: var(--font-size-xxxlarge);
         font-family: 'Junction-bold';
-        margin-bottom: 1rem;
+        margin-bottom: var(--gap-m);
     }
 
     .subtitle {
         color: var(--font-color-highlight);
         font-size: var(--font-size-xlarge);
         font-family: 'Junction-bold';
-        margin-bottom: 2rem;
+        margin-bottom: var(--gap-m);
     }
 
     .paragraph {
@@ -89,6 +92,6 @@
         font-size: var(--font-size-large);
 
         letter-spacing: .15rem;
-        margin-bottom: 2rem;
+        margin-bottom: var(--gap-m);
     }
 </style>
