@@ -41,13 +41,6 @@
         letter-spacing: .15rem;
     }
 
-    :global(*) {
-        padding: 0%;
-        margin: 0%;
-        line-height: 1;
-        box-sizing: border-box;
-    }
-
         /* fonts */
     @font-face {
         font-family: Junction;

@@ -13,5 +13,8 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  }
 }
