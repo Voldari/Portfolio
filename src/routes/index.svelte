@@ -37,17 +37,19 @@
         /* Font sizes defined */
 
 
-        --font-tiny: clamp(7.5px, 0.84vw + 4.21px, 15px);
-        --font-text: clamp(10px, 1.12vw + 5.62px, 20px);
-        --font-subtitle: clamp(13.33px, 1.5vw + 7.49px, 26.66px);
-        --font-title: clamp(17.77px, 2vw + 9.98px, 35.54px);
-        --font-mega: clamp(23.69px, 2.66vw + 13.31px, 47.37px);
+        --font-tiny: clamp(7.5px, 0.77vw + 5.1px, 15px);
+--font-text: clamp(10px, 1.03vw + 6.8px, 20px);
+--font-subtitle: clamp(13.33px, 1.37vw + 9.07px, 26.66px);
+--font-title: clamp(17.77px, 1.83vw + 12.09px, 35.54px);
+--font-mega: clamp(23.69px, 2.44vw + 16.12px, 47.37px);
 
         --gap-m: 2rem;
 
-        --spacing-small: clamp(5px, 2.25vw + -3.76px, 25px);
-        --spacing-medium: clamp(10px, 4.49vw + -7.53px, 50px);
-        --spacing-large: clamp(20px, 8.99vw + -15.06px, 100px);
+        --spacing-small: clamp(5.63px, 2.32vw + -1.57px, 28.14px);
+--spacing-z: clamp(7.5px, 3.09vw + -2.09px, 37.51px);
+--spacing-medium: clamp(10px, 4.12vw + -2.78px, 50px);
+--spacing-v: clamp(17.77px, 7.33vw + -4.95px, 88.84px);
+--spacing-large: clamp(23.69px, 9.77vw + -6.59px, 118.43px);
 
         font-size: 62.5%;
 

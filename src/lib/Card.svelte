@@ -38,7 +38,8 @@
         top: 0;
         left: 0;
         right: 0%;
-        bottom: calc(100% - 10rem);
+        bottom: calc(100% - var(--spacing-large));
+        transition: bottom .2s;
     }
 
     .card::after {
@@ -49,7 +50,16 @@
         bottom: 0;
         right: 0;
         left: 0%;
-        top: calc(100% - 10rem);
+        top: calc(100% - var(--spacing-large));
+        transition: top .2s;
+    }
+
+    .card:hover::before {
+        bottom: calc(100% - var(--spacing-medium));
+    }
+
+    .card:hover::after {
+        top: calc(100% - var(--spacing-medium));
     }
 
     .grid:hover {
