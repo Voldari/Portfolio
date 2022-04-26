@@ -27,8 +27,8 @@
         --box-height: 80%;
         --box-width: 100%; 
         
-        height: 3rem;
-        font-size: 3rem;
+        height: var(--font-subtitle);
+        font-size: var(--font-subtitle);
         text-decoration: none;
         color: black;
         border: none;

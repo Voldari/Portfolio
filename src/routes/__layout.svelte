@@ -10,6 +10,6 @@
 
 <style>
     .container {
-        padding: 10rem;
+        padding: var(--spacing-large);
     }
 </style>

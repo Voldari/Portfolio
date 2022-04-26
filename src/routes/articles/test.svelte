@@ -18,21 +18,21 @@
 
 <style>
     h1 { 
-        font-size: var(--font-size-xxlarge);
-        margin-bottom: var(--gap-m);
+        font-size: var(--font-title);
+        margin-bottom: var(--spacing-small);
     }
 
     h2 {
-        font-size: var(--font-size-large);
-        margin-bottom: var(--gap-m);
+        font-size: var(--font-subtitle);
+        margin-bottom: var(--spacing-small);
     }
 
     p {
-        font-size: var(--font-size-normal);
-        margin-bottom: var(--gap-m);
+        font-size: var(--font-text);
+        margin-bottom: var(--spacing-small);
     }
 
     .container {
-        margin: var(--gap-m);
+        margin: var(--spacing-small);
     }
 </style>

@@ -16,7 +16,8 @@
 <style>
     .container { 
         display: flex;
-        gap: 3rem;
+        gap: var(--spacing-small);
+        
     }
     .header {
         display: flex;

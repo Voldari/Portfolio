@@ -5,10 +5,10 @@
 
 <style>
     a {
-        font-size: var(--font-size-small);
+        font-size: var(--font-tiny);
     }
 
     .container {
-        margin-bottom: var(--gap-m);
+        margin-bottom: var(--spacing-small);
     }
 </style>

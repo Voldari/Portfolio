@@ -11,7 +11,7 @@ import BackButton from "$lib/BackButton.svelte";
 
 <style>
     .container {
-        padding: 5rem;
+        padding: var(--spacing-medium);
         max-width: 100rem;
     }
 </style>
