@@ -4,7 +4,7 @@
     let x;
     let y;
 
-    let sfd="/svelte.svg"
+    let sfd="svelte.svg"
 
 </script>
 

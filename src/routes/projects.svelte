@@ -3,7 +3,7 @@
     import Main from '$lib/Main.svelte';
 import ProjectCard from '$lib/ProjectCard.svelte';
 
-let gh='/github.svg';
+let gh='github.svg';
 
 </script>
 
