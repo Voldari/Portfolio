@@ -5,9 +5,7 @@
                 Title of Article
             </slot>
         </h2>
-        <a href="/articles/test">
-            <slot name="subtitle"/>
-        </a>
+        <slot class="subtitle" name="subtitle"/>
         <p class="body">
             <slot name="body">
                 Somethings missing here
@@ -36,7 +34,7 @@
         top: 0;
         left: 0;
         right: 0%;
-        bottom: calc(100% - var(--spacing-large));
+        bottom: 60%;
         transition: bottom .2s;
     }
 
@@ -48,21 +46,18 @@
         bottom: 0;
         right: 0;
         left: 0%;
-        top: calc(100% - var(--spacing-large));
+        top: 60%;
         transition: top .2s;
     }
 
     .card:hover::before {
-        bottom: calc(100% - var(--spacing-medium));
+        bottom: 80%;
     }
 
     .card:hover::after {
-        top: calc(100% - var(--spacing-medium));
+        top: 80%;
     }
 
-    a:hover {
-        cursor: pointer;
-    }
 
     .grid {
         display: grid;
@@ -70,11 +65,12 @@
             "title subtitle"
             "body body"
             "foot foot";
-        grid-template-columns: 1fr 15ch;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: var(--font-subtitle);
         
         gap: var(--spacing-small);
         height: 100%;
-        padding: 2rem;
+        padding: var(--spacing-small);
 
         z-index: 999 ;
 
@@ -87,7 +83,7 @@
         margin: 0;
     }
 
-    a {
+    .subtitle {
         font-size: var(--font-text); 
         grid-area: subtitle;
         margin: 0;

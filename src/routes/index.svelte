@@ -4,7 +4,7 @@
     let x;
     let y;
 
-    import sfd from "/Svelte.svg"
+    import sfd from "/svelte.svg"
 
 </script>
 
@@ -42,11 +42,11 @@
         /* Font sizes defined */
 
 
-        --font-tiny: clamp(7.5px, 0.76vw + 5.15px, 15px);
-        --font-text: clamp(10px, 1.01vw + 6.87px, 20px);
-        --font-subtitle: clamp(13.33px, 1.35vw + 9.16px, 26.66px);
-        --font-title: clamp(17.77px, 1.79vw + 12.2px, 35.54px);
-        --font-mega: clamp(23.69px, 2.39vw + 16.27px, 47.37px);
+        --font-tiny: clamp(9px, 0.61vw + 7.12px, 15px);
+--font-text: clamp(12px, 0.81vw + 9.49px, 20px);
+--font-subtitle: clamp(16px, 1.08vw + 12.66px, 26.66px);
+--font-title: clamp(21.32px, 1.44vw + 16.87px, 35.54px);
+--font-mega: clamp(28.42px, 1.91vw + 22.49px, 47.37px);
 
         --spacing-small: clamp(2.81px, 2.56vw + -5.12px, 28.14px);
         --spacing-medium: clamp(5px, 4.55vw + -9.09px, 50px);
