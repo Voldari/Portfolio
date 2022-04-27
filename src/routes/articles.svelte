@@ -2,7 +2,7 @@
 import Card from "$lib/Card.svelte";
 import Main from "$lib/Main.svelte";
 
-import svelteSvg from "/svelte.svg"
+let svelteSvg="/svelte.svg"
 </script>
 
 <Main>

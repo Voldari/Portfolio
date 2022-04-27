@@ -4,7 +4,7 @@
     let x;
     let y;
 
-    import sfd from "/svelte.svg"
+    let sfd="/svelte.svg"
 
 </script>
 
