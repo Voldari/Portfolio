@@ -3,11 +3,16 @@
 
     let x;
     let y;
+
+    import sfd from "/Svelte.svg"
+
 </script>
 
 <svelte:window bind:innerWidth={x} bind:innerHeight={y}/>
 
 {x}x{y}
+
+<img src={sfd} alt="dd" />
 
 <div class="body">
     <h1 class="title">{data.title}</h1>
@@ -37,19 +42,15 @@
         /* Font sizes defined */
 
 
-        --font-tiny: clamp(7.5px, 0.77vw + 5.1px, 15px);
---font-text: clamp(10px, 1.03vw + 6.8px, 20px);
---font-subtitle: clamp(13.33px, 1.37vw + 9.07px, 26.66px);
---font-title: clamp(17.77px, 1.83vw + 12.09px, 35.54px);
---font-mega: clamp(23.69px, 2.44vw + 16.12px, 47.37px);
+        --font-tiny: clamp(7.5px, 0.76vw + 5.15px, 15px);
+        --font-text: clamp(10px, 1.01vw + 6.87px, 20px);
+        --font-subtitle: clamp(13.33px, 1.35vw + 9.16px, 26.66px);
+        --font-title: clamp(17.77px, 1.79vw + 12.2px, 35.54px);
+        --font-mega: clamp(23.69px, 2.39vw + 16.27px, 47.37px);
 
-        --gap-m: 2rem;
-
-        --spacing-small: clamp(5.63px, 2.32vw + -1.57px, 28.14px);
---spacing-z: clamp(7.5px, 3.09vw + -2.09px, 37.51px);
---spacing-medium: clamp(10px, 4.12vw + -2.78px, 50px);
---spacing-v: clamp(17.77px, 7.33vw + -4.95px, 88.84px);
---spacing-large: clamp(23.69px, 9.77vw + -6.59px, 118.43px);
+        --spacing-small: clamp(2.81px, 2.56vw + -5.12px, 28.14px);
+        --spacing-medium: clamp(5px, 4.55vw + -9.09px, 50px);
+        --spacing-large: clamp(11.84px, 10.77vw + -21.53px, 118.43px);
 
         font-size: 62.5%;
 

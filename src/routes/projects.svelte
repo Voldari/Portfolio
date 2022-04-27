@@ -1,48 +1,49 @@
 <script>
 	import Card from '$lib/Card.svelte';
+    import Main from '$lib/Main.svelte';
+import ProjectCard from '$lib/ProjectCard.svelte';
 
 </script>
-<div class="body">
-    <h1 class="title">Projects</h1>
-    <h2 class="subtitle">here are some of the things that I've been working on</h2>
-    <div class="project-grid">
 
-        <Card>
+<Main>
+    <span slot="title">Projects</span>
+    <span slot="subtitle">Here are some of the things that I've been working on</span>
+
+    <div slot="body" class="project-grid">
+
+        <ProjectCard>
+            <span slot="title">Vibia's Market</span>
+            <span slot="subtitle">gh</span>
+            <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market.</span>
+            <span slot="foot">SvelteKit * SupaBase</span>
+        </ProjectCard>
+
+        <ProjectCard>
+            <span slot="title">Corner Store</span>
+            <span slot="subtitle">gh</span>
+            <span slot="body">Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</span>
+            <span slot="foot">Android Studio * Java * Kotlin</span>
+        </ProjectCard>
+
+        <ProjectCard>
+            <span slot="title">JUNO</span>
+            <span slot="subtitle">gh</span>
+            <span slot="body">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
+            <span slot="foot">C</span>
+        </ProjectCard>
+
+        <ProjectCard>
             <span slot="title">Chicken Game</span>
             <span slot="subtitle">gh</span>
             <span slot="body">Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine.</span>
             <span slot="foot">LoVE2D * lua</span>
-        </Card>
-        <Card>
-            <span slot="title">Marketplace</span>
-            <span slot="subtitle">gh</span>
-            <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market.</span>
-            <span slot="foot">SvelteKit * SupaBase</span>
-        </Card>
+        </ProjectCard>
+        
 
     </div>
-</div>
+</Main>
 
 <style>
-    .body {
-        max-width: 100rem;
-        height: 100%;
-        margin: var(--spacing-medium);
-        
-    }
-
-    .title {
-        font-size: var(--font-title);
-        font-family: var(--bold-font);
-    }
-
-    .subtitle {
-        color: var(--font-color-highlight);
-        font-size: var(--font-subtitle);
-        font-family: 'Junction-bold';
-        margin-bottom: var(--gap-m);
-    }
-
     .project-grid {
         height: 100%;
         display: flex;
