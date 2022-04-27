@@ -2,8 +2,8 @@
 	import Card from '$lib/Card.svelte';
     import Main from '$lib/Main.svelte';
 import ProjectCard from '$lib/ProjectCard.svelte';
+import gh from '$lib/assets/github.svg'
 
-let gh='github.svg';
 
 </script>
 
