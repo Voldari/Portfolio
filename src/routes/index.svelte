@@ -1,4 +1,5 @@
 <script>
+	import Tag from './../lib/elements/Tag.svelte';
     import data from  "/src/content/home.json";
 
     let x;
@@ -10,9 +11,9 @@
 
 <svelte:window bind:innerWidth={x} bind:innerHeight={y}/>
 
-{x}x{y}
+<Tag iconSrc="$lib/assets/github.svg">
 
-<img src={sfd} alt="dd" />
+</Tag>
 
 <div class="body">
     <h1 class="title">{data.title}</h1>

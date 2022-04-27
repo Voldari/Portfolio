@@ -18,7 +18,7 @@ import gh from '$lib/assets/github.svg'
             <a href="/"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>
-            <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market.</span>
+            <span slot="body">WIP Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market.</span>
             <span slot="foot">SvelteKit * SupaBase</span>
         </ProjectCard>
 
@@ -27,7 +27,7 @@ import gh from '$lib/assets/github.svg'
             <a href="/"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>
-            <span slot="body">Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</span>
+            <span slot="body">STABLE Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</span>
             <span slot="foot">Android Studio * Java * Kotlin</span>
         </ProjectCard>
 
@@ -36,7 +36,7 @@ import gh from '$lib/assets/github.svg'
             <a href="/"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>      
-            <span slot="body">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
+            <span slot="body">STABLE Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
             <span slot="foot">C</span>
         </ProjectCard>
 
@@ -45,7 +45,7 @@ import gh from '$lib/assets/github.svg'
             <a href="/"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>
-            <span slot="body">Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine.</span>
+            <span slot="body">WIP Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine.</span>
             <span slot="foot">LoVE2D * lua</span>
         </ProjectCard>
         
