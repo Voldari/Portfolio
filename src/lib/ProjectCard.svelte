@@ -11,16 +11,16 @@
                 Somethings missing here
             </slot>
         </p>
-        <p class="footer">
+        <div class="footer">
             <slot name="foot"/>
-        </p>
+        </div>
     </div>
 </div>
 
 
 <style>
     .card {
-        padding: var(--spacing-medium);
+        padding: var(--spacing-small);
         width: 100%;
         
         position: relative;
@@ -92,7 +92,7 @@
     .body {
         font-size: var(--font-text);
         grid-area: body;
-        padding-left: 2rem;
+        padding-left: var(--spacing-small);
         margin: 0;
     }
 

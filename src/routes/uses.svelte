@@ -53,7 +53,7 @@
     }   
 
     ul {
-        margin-bottom: 2rem;
+        margin-bottom: var(--spacing-small);
         list-style: disc in;
     }
 

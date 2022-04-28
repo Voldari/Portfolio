@@ -1,16 +1,29 @@
 <script>
-    export let iconSrc;
-    let alt;
-
-    let iconUri = encodeURI(iconSrc);
-
-    import gh from '$lib/assets/github.svg';
 
 </script>
 
 <a href="/">
-    <img src={iconUri} alt={alt}>
+    <slot name="image" class="image">img</slot>
+
     <p>
-        <slot name="tagName ">tag</slot>
+        <slot name="tagName">tag</slot>
     </p>
 </a>
+
+<style>
+    a {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        width: fit-content;
+    }
+
+    .image {
+        color: black;
+    }
+
+    p {
+        font-size: var(--font-tiny);
+    }
+</style>
