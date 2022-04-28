@@ -90,8 +90,8 @@
             <span slot="body">WIP Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine.</span>
             <div slot="foot" class="tags">
                 <Tag>
-                    <img src={svelteSvg} alt="svelte" slot="image">
-                    <span slot="tagName">Svelte</span>
+                    <img src={loveSvg} alt="love" slot="image">
+                    <span slot="tagName">LÖVE2D</span>
                 </Tag>
                 <Tag>
                     <img src={luaSvg} alt="lua" slot="image">
