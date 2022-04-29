@@ -1,6 +1,6 @@
 <script>
 
-import BackButton from "$lib/BackButton.svelte";
+import BackButton from "$lib/elements/BackButton.svelte";
 
 </script>
 <div class="container">

@@ -1,8 +1,10 @@
 <script>
-	import Navlink from '$lib/Navlink.svelte';
+	import Navlink from '$lib/elements/Navlink.svelte';
     import { page } from '$app/stores';
 
 </script>
+
+
 
 <div class="container">
 

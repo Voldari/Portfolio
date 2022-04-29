@@ -1,6 +1,7 @@
 <script>
-import Card from "$lib/Card.svelte";
-import Main from "$lib/Main.svelte";
+
+import Main from "$lib/blocks/Main.svelte";
+import Card from "$lib/elements/Card.svelte";
 
 let svelteSvg="svelte.svg"
 </script>
@@ -16,7 +17,7 @@ let svelteSvg="svelte.svg"
         
         <Card>
             <span slot="title">
-                Why I'm going all in on Svelte
+                <a href="/articles/test">Why I'm going all in on Svelte</a> 
             </span>
 
             <span slot="body">
@@ -30,7 +31,7 @@ let svelteSvg="svelte.svg"
 
         <Card>
             <span slot="title">
-                First look at a 1962 pacer trailer
+                <a href="/articles/trailer_first_look">First look at a 1962 pacer trailer </a>
             </span>
 
             <span slot="body">
@@ -69,6 +70,10 @@ let svelteSvg="svelte.svg"
         align-content: flex-start;
 
         gap: var(--spacing-small);
+    }
+
+    a {
+        color: black;
     }
 
 </style>

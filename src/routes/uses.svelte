@@ -1,5 +1,5 @@
 <script>
-    import Main from "$lib/Main.svelte";
+    import Main from "$lib/blocks/Main.svelte";
 </script>
 
 <Main>

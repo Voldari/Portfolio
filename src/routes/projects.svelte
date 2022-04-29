@@ -1,7 +1,8 @@
 <script>
-	import Card from '$lib/Card.svelte';
-    import Main from '$lib/Main.svelte';
-    import ProjectCard from '$lib/ProjectCard.svelte';
+
+	import Card from '$lib/elements/Card.svelte';
+    import Main from '$lib/blocks/Main.svelte';
+
 
     import gh from '$lib/assets/github.svg';
 
@@ -28,12 +29,14 @@
 
     <div slot="body" class="project-grid">
 
-        <ProjectCard>
+        <Card>
             <span slot="title">Vibia's Market</span>
             <a href="https://github.com/Voldari/VibiasMarket"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>
+            
             <span slot="body">WIP Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market.</span>
+
             <div slot="foot" class="tags">
                 <Tag>
                     <img src={svelteSvg} alt="svelte" slot="image">
@@ -44,9 +47,9 @@
                     <span slot="tagName">Supabase</span>
                 </Tag>
             </div>
-        </ProjectCard>
+        </Card>
 
-        <ProjectCard>
+        <Card>
             <span slot="title">Corner Store</span>
             <a href="https://github.com/Voldari/corner-store"  slot="subtitle">
                 <img src={gh} alt="gh">
@@ -66,9 +69,9 @@
                     <span slot="tagName">Kotlin</span>
                 </Tag>
             </div>
-        </ProjectCard>
+        </Card>
 
-        <ProjectCard>
+        <Card>
             <span slot="title">JUNO</span>
             <a href="https://github.com/Voldari/juno"  slot="subtitle">
                 <img src={gh} alt="gh">
@@ -80,9 +83,9 @@
                     <span slot="tagName">C</span>
                 </Tag>
             </div>
-        </ProjectCard>
+        </Card>
 
-        <ProjectCard>
+        <Card>
             <span slot="title">Chicken Game</span>
             <a href="https://github.com/Voldari/chicken-game"  slot="subtitle">
                 <img src={gh} alt="gh">
@@ -98,7 +101,7 @@
                     <span slot="tagName">Lua</span>
                 </Tag>
             </div>
-        </ProjectCard>
+        </Card>
         
 
     </div>

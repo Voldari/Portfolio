@@ -2,12 +2,11 @@
 	import Tag from './../lib/elements/Tag.svelte';
     import data from  "/src/content/home.json";
 
-    let x;
-    let y;
-
     import svelteSvg from "$lib/assets/svelte.svg";
 
 </script>
+
+
 
 <div class="body">
     <h1 class="title">{data.title}</h1>

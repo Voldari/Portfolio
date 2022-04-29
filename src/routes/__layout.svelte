@@ -1,12 +1,22 @@
 <script>
-	import Header from '$lib/Header.svelte';
+	import Header from '$lib/blocks/Header.svelte';
     import '/node_modules/modern-normalize/modern-normalize.css';
+
+    let x;
+
+    let y;
 </script>
+
+<svelte:window bind:innerHeight={y} bind:innerWidth={x}/>
+
+{x} x {y}
 
 <div class="container">
     <Header/>
     <slot></slot>
 </div>
+
+
 
 <style>
 

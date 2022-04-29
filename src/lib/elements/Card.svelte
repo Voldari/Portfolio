@@ -5,7 +5,10 @@
                 Title of Article
             </slot>
         </h2>
-        <slot class="subtitle" name="subtitle"/>
+        
+        <span class="subtitle">
+            <slot name="subtitle"/>
+        </span>
         <p class="body">
             <slot name="body">
                 Somethings missing here
