@@ -18,30 +18,6 @@
 
 
 <style>
-    
-
-    :global(*) {
-        margin: 0;
-        padding: 0;
-    }
-
-        /* fonts */
-    @font-face {
-        font-family: Junction;
-        src: url('/src/fonts/junction-regular.woff'),
-             url('/src/fonts/junction-regular.ttf')
-    }
-    @font-face {
-        font-family: Junction-bold;
-        src: url('/src/fonts/junction-bold.woff'),
-             url('/src/fonts/junction-bold.ttf')
-    }
-    @font-face {
-        font-family: Junction-light;
-        src: url('/src/fonts/junction-light.woff'),
-             url('/src/fonts/junction-light.ttf')
-    }
-
     .body {
         max-width: 100rem;
         display: flex;
