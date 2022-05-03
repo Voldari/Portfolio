@@ -1,9 +1,5 @@
 <script>
-	import Tag from './../lib/elements/Tag.svelte';
     import data from  "/src/content/home.json";
-
-    import svelteSvg from "$lib/assets/svelte.svg";
-
 </script>
 
 
