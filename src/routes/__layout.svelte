@@ -1,30 +1,20 @@
+
 <script>
 	import Header from '$lib/blocks/Header.svelte';
-    import '/node_modules/modern-normalize/modern-normalize.css';
-
-    let x;
-
-    let y;
+    import '/node_modules/modern-normalize/modern-normalize.css';  
 </script>
-
-<svelte:window bind:innerHeight={y} bind:innerWidth={x}/>
-
-{x} x {y}
 
 <div class="container">
     <Header/>
     <slot></slot>
 </div>
 
-
-
 <style>
     :global(*) {
         margin: 0;
         padding: 0;
     }
-
-
+    
     /* fonts */
     @font-face {
         font-family: Junction;
