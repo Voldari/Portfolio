@@ -25,7 +25,7 @@
 
     .button { 
         --box-height: 80%;
-        --box-width: 120%; 
+        --box-width: 100%; 
         
         height: var(--font-subtitle);
         font-size: var(--font-subtitle);
@@ -38,7 +38,7 @@
 
     .button:hover, .button:focus-visible {
         --box-height: 50%;
-        --box-width: 130%;
+        --box-width: 110%;
         --color: var(--hover-color, hsl(245, 91%, 73%));
     }
     .button:active {
@@ -48,7 +48,7 @@
 
     .selected {
         --box-height: 20%;
-        --box-width: 130%; 
+        --box-width: 110%; 
     }
 
     .box { 

@@ -1,8 +1,10 @@
 <script>
 
+    export let href;
+
 </script>
 
-<a href="/">
+<a {href}>
     <slot name="image" class="image">img</slot>
 
     <p>
