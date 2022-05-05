@@ -1,5 +1,4 @@
 <script>
-    export let git;
 </script>
 
 <div class="card">
@@ -10,9 +9,9 @@
             </slot>
         </h2>
         
-        <a class="subtitle" href={git}>
+        <div class="subtitle">
             <slot name="subtitle"/>
-        </a>
+        </div>
         <p class="body">
             <slot name="body">
                 Somethings missing here
@@ -87,6 +86,8 @@
         font-family: var(--bold-font);
         grid-area: title;
         margin: 0;
+
+        z-index: 1;
     }
 
     .subtitle {

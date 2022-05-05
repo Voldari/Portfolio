@@ -1,4 +1,8 @@
 <script>
+    // add meta desctiption
+    // add title tag
+
+
     import data from  "/src/content/home.json";
 </script>
 

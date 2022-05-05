@@ -19,6 +19,8 @@
         color: black;
         text-decoration: none;
         width: fit-content;
+
+        z-index: 1;
     }
 
     .image {
