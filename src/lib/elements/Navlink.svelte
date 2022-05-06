@@ -13,7 +13,7 @@ export let link = "/";
 </script>
 
 <div class="button" class:selected>
-    <a href={link} >
+    <a href={link}  >
         <slot>button</slot>
     </a>
     <div class="box"/>
@@ -67,6 +67,8 @@ a {
     transform: translate(-50%, 0%);
     width: var(--box-width);
     height: var(--box-height);
+
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
 
     transition: height .1s linear, width .2s linear, background-color .2s ease;
 
