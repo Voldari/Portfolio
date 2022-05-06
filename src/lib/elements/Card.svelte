@@ -1,3 +1,7 @@
+<script>
+    export let git;
+</script>
+
 <div class="card">
     <div class="grid">
         <h2>
@@ -5,20 +9,21 @@
                 Title of Article
             </slot>
         </h2>
-
-        <span class="subtitle">
+        
+        <a class="subtitle" href={git}>
             <slot name="subtitle"/>
-                </span>
-                <p class="body">
-                    <slot name="body">
-                        Somethings missing here
-                    </slot>
-                </p>
-                <div class="footer">
-                    <slot name="foot"/>
-                        </div>
-                        </div>
-                        </div>
+        </a>
+        <p class="body">
+            <slot name="body">
+                Somethings missing here
+            </slot>
+        </p>
+        <div class="footer">
+            <slot name="foot"/>
+        </div>
+    </div>
+</div>
+
 
 <style>
 .card {
@@ -69,20 +74,18 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: var(--font-subtitle);
 
-    gap: var(--spacing-small);
-    height: 100%;
-    padding: var(--spacing-small);
 
     z-index: 999;
 
 }
 
-h2 {
-    font-size: var(--font-subtitle);
-    font-family: var(--bold-font);
-    grid-area: title;
-    margin: 0;
-}
+    .subtitle {
+        font-size: var(--font-text); 
+        grid-area: subtitle;
+        margin: 0;
+        height: 100%;
+        z-index: 1;
+    }
 
 .subtitle {
     font-size: var(--font-text);

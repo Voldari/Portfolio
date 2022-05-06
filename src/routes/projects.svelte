@@ -25,12 +25,10 @@ import Tag from '$lib/elements/Tag.svelte';
 
     <div slot="body" class="project-grid">
 
-        <Card>
+        <Card git="https://github.com/Voldari/VibiasMarket">
             <span slot="title">Vibia's Market</span>
-            <a href="https://github.com/Voldari/VibiasMarket"  slot="subtitle">
-                <img src={gh} alt="gh">
-            </a>
-
+            <img src={gh} alt="gh" slot="subtitle">
+            
             <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market. Currently a WIP</span>
 
             <div slot="foot" class="tags">
@@ -45,11 +43,9 @@ import Tag from '$lib/elements/Tag.svelte';
             </div>
         </Card>
 
-        <Card>
+        <Card git="https://github.com/Voldari/corner-store">
             <span slot="title">Corner Store</span>
-            <a href="https://github.com/Voldari/corner-store"  slot="subtitle">
-                <img src={gh} alt="gh">
-            </a>
+            <img src={gh} alt="gh"  slot="subtitle">
             <span slot="body">Track what you have in your fridge and all the various possible recipe combinations you can make. Put items you need on the shopping list and save your favorite recipes for later.</span>
             <div slot="foot" class="tags">
                 <Tag href="https://developer.android.com/studio">
@@ -67,11 +63,9 @@ import Tag from '$lib/elements/Tag.svelte';
             </div>
         </Card>
 
-        <Card>
+        <Card git="https://github.com/Voldari/juno">
             <span slot="title">JUNO</span>
-            <a href="https://github.com/Voldari/juno"  slot="subtitle">
-                <img src={gh} alt="gh">
-            </a>
+            <img src={gh} alt="gh" slot="subtitle">
             <span slot="body">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
             <div slot="foot" class="tags">
                 <Tag href="https://en.wikipedia.org/wiki/C_(programming_language)">
@@ -81,11 +75,9 @@ import Tag from '$lib/elements/Tag.svelte';
             </div>
         </Card>
 
-        <Card>
+        <Card git="https://github.com/Voldari/chicken-game">
             <span slot="title">Chicken Game</span>
-            <a href="https://github.com/Voldari/chicken-game"  slot="subtitle">
-                <img src={gh} alt="gh">
-            </a>
+            <img src={gh} alt="gh" slot="subtitle">
             <span slot="body">Raise chickens in the fertile ground of a abandoned dye factory. Still a work in progress this is my first experience with the LoVE2D engine. Currently a WIP</span>
             <div slot="foot" class="tags">
                 <Tag href="https://love2d.org/">
@@ -116,12 +108,9 @@ import Tag from '$lib/elements/Tag.svelte';
 
 }
 
-img {
-    height: var(--font-subtitle);
-}
+    .tags {
+        display: flex;
+        gap: var(--spacing-small);
+    }
 
-.tags {
-    display: flex;
-    gap: var(--spacing-small);
-}
 </style>

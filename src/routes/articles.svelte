@@ -5,8 +5,8 @@ import {
 } from "$lib/db";
 let summary = articleSummary();
 
-import Main from "$lib/blocks/Main.svelte";
-import Card from "$lib/elements/Card.svelte";
+    import Main from "$lib/blocks/Main.svelte";
+    import Articlecard from "$lib/elements/Articlecard.svelte";
 
 let svelteSvg = "svelte.svg"
 </script>
@@ -17,13 +17,13 @@ let svelteSvg = "svelte.svg"
 
     <div slot="body" class="project-grid">
         {#await summary then summary}
-        {#each summary as article}
-        <Card>
-            <a href="/articles/{article.slug}" slot="title">{article.title} </a>
-            <span slot="body">{article.intro}</span>
-            <span slot="foot">d</span>
-        </Card>
-        {/each}
+            {#each summary as article}
+                <Articlecard>
+                    <a href="/articles/{article.slug}" slot="title">{article.title} </a>
+                    <span slot="body">{article.intro}</span>
+                    <span slot="foot">d</span>
+                </Articlecard>
+            {/each}
         {/await}
     </div>
 </Main>

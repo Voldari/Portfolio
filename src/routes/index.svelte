@@ -1,5 +1,9 @@
 <script>
-import data from "/src/content/home.json";
+    // add meta desctiption
+    // add title tag
+
+
+    import data from  "/src/content/home.json";
 </script>
 
 <div class="body">
