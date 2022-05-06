@@ -20,8 +20,8 @@ import {
 .container {
     display: flex;
     gap: var(--spacing-large);
-    padding-bottom: var(--spacing-medium);
-    padding: 5rem;
+    padding: var(--spacing-small);
+
     background-color: hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) * 1.6));
     z-index: -1;
 }

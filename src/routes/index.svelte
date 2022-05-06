@@ -17,9 +17,9 @@
 <style>
 .body {
     max-width: 100rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: var(--spacing-medium);
 }
 
 .title {

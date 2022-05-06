@@ -13,7 +13,7 @@
 <style>
 .container {
     max-width: 100rem;
-    margin: var(--spacing-medium);
+    width: 100%;
 }
 
 .title {

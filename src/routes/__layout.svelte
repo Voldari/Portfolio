@@ -4,9 +4,9 @@ import '/node_modules/modern-normalize/modern-normalize.css';
 </script>
 
 <Header/>
-    <div class="container">
-        <slot></slot>
-    </div>
+<div class="container">
+    <slot></slot>
+</div>
 
 <style>
 :global(*) {
@@ -102,7 +102,8 @@ import '/node_modules/modern-normalize/modern-normalize.css';
 }
 
 .container {
-    margin: var(--spacing-large);
-    margin-top: var(--spacing-medium);
+    margin: var(--spacing-medium);
+    display: flex;
+    justify-content: center;
 }
 </style>
