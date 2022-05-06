@@ -1,30 +1,33 @@
 <script>
-	import Navlink from '$lib/elements/Navlink.svelte';
-    import { page } from '$app/stores';
-
+import Navlink from '$lib/elements/Navlink.svelte';
+import {
+    page
+} from '$app/stores';
 </script>
-
-
 
 <div class="container">
 
     <div class="header">
-        <Navlink link="/" selected={$page.url.pathname === '/'}>Home</Navlink>
+        <Navlink link="/" selected={$page.url.pathname === '/'} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Home</Navlink>
     </div>
 
-    <Navlink link="/projects" selected={$page.url.pathname ==="/projects"}>Projects</Navlink>
-    <Navlink link="/articles" selected={$page.url.pathname === "/articles"}>Articles</Navlink>
-    <Navlink link="/uses" selected={$page.url.pathname === "/uses"}>Uses</Navlink>
+    <Navlink link="/projects" selected={$page.url.pathname ==="/projects"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Projects</Navlink>
+    <Navlink link="/articles" selected={$page.url.pathname === "/articles"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Articles</Navlink>
+    <Navlink link="/uses" selected={$page.url.pathname === "/uses"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Uses</Navlink>
 </div>
 
 <style>
-    .container { 
-        display: flex;
-        gap: var(--spacing-small);
-        margin-bottom: var(--spacing-medium);
-    }
-    .header {
-        display: flex;
-        flex-grow: 1;
-    }
+.container {
+    display: flex;
+    gap: var(--spacing-large);
+    padding-bottom: var(--spacing-medium);
+    padding: 5rem;
+    background-color: hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) * 1.6));
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    flex-grow: 1;
+}
 </style>

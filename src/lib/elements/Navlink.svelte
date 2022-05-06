@@ -7,65 +7,69 @@
 --->
 
 <script>
-    export let selected = false;
+export let selected = false;
 
-    export let link = "/";
+export let link = "/";
 </script>
 
-
-
-<a href={link} class="button" class:selected>
-    <slot>button</slot>
+<div class="button" class:selected>
+    <a href={link} >
+        <slot>button</slot>
+    </a>
     <div class="box"/>
-</a>
-
-
+</div>
 
 <style>
+.button {
+    --box-height: 120%;
+    --box-width: 120%;
+    --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 1.2));
 
-    .button { 
-        --box-height: 80%;
-        --box-width: 100%; 
-        
-        height: var(--font-subtitle);
-        font-size: var(--font-subtitle);
-        text-decoration: none;
-        color: black;
-        border: none;
-        position: relative;
-        line-height: 1;
-    }
+    height: var(--font-subtitle);
+    font-size: var(--font-subtitle);
+    text-decoration: none;
+    color: var(--font-color);
+    border: none;
+    position: relative;
+    line-height: 1;
+    z-index: 2;
+}
 
-    .button:hover, .button:focus-visible {
-        --box-height: 50%;
-        --box-width: 110%;
-        --color: var(--hover-color, hsl(245, 91%, 73%));
-    }
-    .button:active {
-        --box-height: 20%;
-        --color: var(--active-color, hsl(245, 91%, 58%));
-    }
+.button:hover,
+.button:focus-visible {
+    --box-height: 50%;
+    --box-width: 110%;
+    --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 1));
+}
 
-    .selected {
-        --box-height: 20%;
-        --box-width: 110%; 
-    }
+.button:active {
+    --box-height: 20%;
+    --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * .8));
+}
 
-    .box { 
-        background-color: var(--color, hsl(245, 91%, 88%));
+.selected {
+    --box-height: 20%;
+    --box-width: 110%;
+}
 
-        position: absolute;
-        left: 50%;
-        bottom: 0%;
-        transform: translate(-50%, 0%);
-        width: var(--box-width);
-        height: var(--box-height);
-        
-        transition: height .1s linear, width .2s linear, background-color .2s ease;
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
 
-        z-index: -1;
-    }
+.box {
 
+    background-color: var(--color);
 
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, 0%);
+    width: var(--box-width);
+    height: var(--box-height);
+
+    transition: height .1s linear, width .2s linear, background-color .2s ease;
+
+    z-index: -1;
+}
 </style>
-

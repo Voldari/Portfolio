@@ -1,5 +1,5 @@
 <script>
-    import Main from "$lib/blocks/Main.svelte";
+import Main from "$lib/blocks/Main.svelte";
 </script>
 
 <Main>
@@ -40,26 +40,24 @@
     </div>
 </Main>
 
-
 <style>
-    .body {
-        
-        display: flex;
-        flex-direction: column;
-    }
+.body {
 
-    h3 {
-        font-size: var(--font-subtitle);
-    }   
+    display: flex;
+    flex-direction: column;
+}
 
-    ul {
-        margin-bottom: var(--spacing-small);
-        list-style: disc in;
-    }
+h3 {
+    font-size: var(--font-subtitle);
+}
 
-    li {
-        font-size: var(--font-text);
-        margin-left: var(--spacing-medium);
-    }
+ul {
+    margin-bottom: var(--spacing-small);
+    list-style: disc in;
+}
 
+li {
+    font-size: var(--font-text);
+    margin-left: var(--spacing-medium);
+}
 </style>

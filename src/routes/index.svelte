@@ -1,8 +1,6 @@
 <script>
-    import data from  "/src/content/home.json";
+import data from "/src/content/home.json";
 </script>
-
-
 
 <div class="body">
     <h1 class="title">{data.title}</h1>
@@ -12,32 +10,30 @@
     </p>
 </div>
 
-
 <style>
-    .body {
-        max-width: 100rem;
-        display: flex;
-        flex-direction: column;
-        margin: var(--spacing-medium);
-        background-color: var(--background-color);
-    }
+.body {
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-medium);
+}
 
-    .title {
-        font-size: var(--font-mega);
-        font-family: 'Junction-bold';
-    }
+.title {
+    font-size: var(--font-mega);
+    font-family: 'Junction-bold';
+}
 
-    .subtitle {
-        color: var(--font-color-highlight);
-        font-size: var(--font-title);
-        font-family: 'Junction-bold';
-    }
+.subtitle {
+    color: var(--font-color-highlight);
+    font-size: var(--font-title);
+    font-family: 'Junction-bold';
+}
 
-    .paragraph {
-        color: var(--font-color-light);
+.paragraph {
+    color: var(--font-color);
 
-        font-size: var(--font-text);
+    font-size: var(--font-text);
 
-        letter-spacing: .15rem;
-    }
+    letter-spacing: .15rem;
+}
 </style>

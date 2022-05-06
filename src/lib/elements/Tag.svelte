@@ -1,7 +1,5 @@
 <script>
-
-    export let href;
-
+export let href;
 </script>
 
 <a {href}>
@@ -13,19 +11,19 @@
 </a>
 
 <style>
-    a {
-        display: flex;
-        align-items: center;
-        color: black;
-        text-decoration: none;
-        width: fit-content;
-    }
+a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+}
 
-    .image {
-        color: black;
-    }
+.image {
+    color: black;
+}
 
-    p {
-        font-size: var(--font-tiny);
-    }
+p {
+    font-size: var(--font-tiny);
+}
 </style>

@@ -1,26 +1,22 @@
 <script>
+import Card from '$lib/elements/Card.svelte';
+import Main from '$lib/blocks/Main.svelte';
 
-	import Card from '$lib/elements/Card.svelte';
-    import Main from '$lib/blocks/Main.svelte';
+import gh from '$lib/assets/github.svg';
 
+import svelteSvg from '$lib/assets/svelte.svg';
+import supabaseSvg from '$lib/assets/supabase.svg';
 
-    import gh from '$lib/assets/github.svg';
+import androidstudioSvg from '$lib/assets/androidstudio.svg';
+import javaSvg from '$lib/assets/java.svg';
+import kotlinSvg from '$lib/assets/kotlin.svg';
 
-    import svelteSvg from '$lib/assets/svelte.svg';
-    import supabaseSvg from '$lib/assets/supabase.svg';
+import cSvg from '$lib/assets/c.svg';
 
-    import androidstudioSvg from '$lib/assets/androidstudio.svg';
-    import javaSvg from '$lib/assets/java.svg';
-    import kotlinSvg from '$lib/assets/kotlin.svg';
+import loveSvg from '$lib/assets/love.svg';
+import luaSvg from '$lib/assets/lua.svg';
 
-    import cSvg from '$lib/assets/c.svg';
-
-    import loveSvg from '$lib/assets/love.svg';
-    import luaSvg from '$lib/assets/lua.svg';
-
-    import Tag from '$lib/elements/Tag.svelte';
-
-
+import Tag from '$lib/elements/Tag.svelte';
 </script>
 
 <Main>
@@ -34,7 +30,7 @@
             <a href="https://github.com/Voldari/VibiasMarket"  slot="subtitle">
                 <img src={gh} alt="gh">
             </a>
-            
+
             <span slot="body">Create a virtual bazar for you and your friends to trade whatever goods you can think of. Created for my own use running TTRPG games this tool is great for anyone looking to simulate a market. Currently a WIP</span>
 
             <div slot="foot" class="tags">
@@ -75,7 +71,7 @@
             <span slot="title">JUNO</span>
             <a href="https://github.com/Voldari/juno"  slot="subtitle">
                 <img src={gh} alt="gh">
-            </a>      
+            </a>
             <span slot="body">Custom written firmware for the Kyria. My first introduction to C and a fun challenge to work on.</span>
             <div slot="foot" class="tags">
                 <Tag href="https://en.wikipedia.org/wiki/C_(programming_language)">
@@ -102,32 +98,30 @@
                 </Tag>
             </div>
         </Card>
-        
 
     </div>
 </Main>
 
 <style>
-    .project-grid {
-        height: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        
+.project-grid {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
 
-        gap: var(--spacing-small);
-        
-    }
+    gap: var(--spacing-small);
 
-    img {
-        height: var(--font-subtitle);
-    }
+}
 
-    .tags {
-        display: flex;
-        gap: var(--spacing-small);
-    }
+img {
+    height: var(--font-subtitle);
+}
+
+.tags {
+    display: flex;
+    gap: var(--spacing-small);
+}
 </style>

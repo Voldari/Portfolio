@@ -1,4 +1,3 @@
-
 <div class="container">
     <h1 class="title">
         <slot name="title">Title</slot>
@@ -12,21 +11,20 @@
 </div>
 
 <style>
-    .container {
-        max-width: 100rem;
-        margin: var(--spacing-medium);
-    }
+.container {
+    max-width: 100rem;
+    margin: var(--spacing-medium);
+}
 
-    .title {
-        font-size: var(--font-title);
-        font-family: var(--bold-font);
-    }
+.title {
+    font-size: var(--font-title);
+    font-family: var(--bold-font);
+}
 
-    .subtitle {
-        color: var(--font-color-highlight);
-        font-size: var(--font-subtitle);
-        font-family: var(--bold-font);
-        margin-bottom: var(--spacing-small);
-    }
-
+.subtitle {
+    color: var(--font-color-highlight);
+    font-size: var(--font-subtitle);
+    font-family: var(--bold-font);
+    margin-bottom: var(--spacing-small);
+}
 </style>
