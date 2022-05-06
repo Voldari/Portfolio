@@ -77,7 +77,15 @@
 
     z-index: 999;
 
-}
+
+    }
+
+    h2 {
+        font-size: var(--font-subtitle);
+        font-family: var(--bold-font);
+        grid-area: title;
+        margin: 0;
+    }
 
     .subtitle {
         font-size: var(--font-text); 
