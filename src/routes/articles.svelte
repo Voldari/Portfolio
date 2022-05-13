@@ -21,7 +21,7 @@ let svelteSvg = "svelte.svg"
                 <Articlecard>
                     <a href="/articles/{article.slug}" slot="title">{article.title} </a>
                     <span slot="body">{article.intro}</span>
-                    <span slot="foot">d</span>
+                    <span slot="foot"></span>
                 </Articlecard>
             {/each}
         {/await}

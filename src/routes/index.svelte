@@ -1,4 +1,6 @@
 <script>
+import { intros } from "svelte/internal";
+
     // add meta desctiption
     // add title tag
 
@@ -9,9 +11,14 @@
 <div class="body">
     <h1 class="title">{data.title}</h1>
     <h2 class="subtitle">{data.subtitle}</h2>
-    <p class="paragraph">
-        {data.intro}
-    </p>
+
+    {#each data.intro as para}
+        <p class="paragraph">
+            {para}
+        </p>
+    {/each}
+
+    
 </div>
 
 <style>
@@ -23,21 +30,22 @@
 }
 
 .title {
+    color: var(--font-color);
     font-size: var(--font-mega);
-    font-family: 'Junction-bold';
+    font-family: var(--bold-font);
+    margin-bottom: var(--spacing-small);
 }
 
 .subtitle {
     color: var(--font-color-highlight);
     font-size: var(--font-title);
-    font-family: 'Junction-bold';
+    font-family: var(--bold-font);
+    margin-bottom: var(--spacing-small);
 }
 
 .paragraph {
     color: var(--font-color);
-
     font-size: var(--font-text);
-
-    letter-spacing: .15rem;
+    margin-bottom: var(--spacing-small);
 }
 </style>
