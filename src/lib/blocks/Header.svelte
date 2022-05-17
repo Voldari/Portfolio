@@ -8,12 +8,12 @@ import {
 <div class="container">
 
     <div class="header">
-        <Navlink link="/" selected={$page.url.pathname === '/'} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Home</Navlink>
+        <Navlink link="/" selected={$page.url.pathname === '/'} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l) --font-color=var(--white)>Home</Navlink>
     </div>
 
-    <Navlink link="/projects" selected={$page.url.pathname ==="/projects"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Projects</Navlink>
-    <Navlink link="/articles" selected={$page.url.pathname === "/articles"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Articles</Navlink>
-    <Navlink link="/uses" selected={$page.url.pathname === "/uses"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l)>Uses</Navlink>
+    <Navlink link="/projects" selected={$page.url.pathname ==="/projects"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l) --font-color=var(--white)>Projects</Navlink>
+    <Navlink link="/articles" selected={$page.url.pathname === "/articles"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l) --font-color=var(--white)>Articles</Navlink>
+    <Navlink link="/uses" selected={$page.url.pathname === "/uses"} --h=var(--ui-color-h) --s=var(--ui-color-s) --l=var(--ui-color-l) --font-color=var(--white)>Uses</Navlink>
 </div>
 
 <style>
@@ -22,7 +22,7 @@ import {
     gap: var(--spacing-large);
     padding: var(--spacing-medium);
 
-    background-color: hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) * 1.6));
+    background-color: var(--black);
     z-index: -1;
 }
 

@@ -21,9 +21,9 @@ export let link = "/";
 
 <style>
 .button {
-    --box-height: 120%;
-    --box-width: 120%;
-    --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 1.2));
+    --box-height: 20%;
+    --box-width: 100%;
+    --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 0.9));
 
     height: var(--font-subtitle);
     font-size: var(--font-subtitle);
@@ -35,22 +35,27 @@ export let link = "/";
     z-index: 2;
 }
 
+
+
+
+
 .button:hover,
 .button:focus-visible {
-    --box-height: 50%;
-    --box-width: 110%;
+    --box-height: 10%;
+    --box-width: 120%;
     --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * 1));
 }
 
 .button:active {
-    --box-height: 20%;
+    --box-height: 80%;
     --color: hsl(var(--h, 245), var(--s, 91%), calc(var(--l, 88%) * .8));
 }
 
 .selected {
-    --box-height: 20%;
-    --box-width: 110%;
+    --box-height: 60%;
+    --box-width: 120%;
 }
+
 
 a {
     color: var(--font-color);
